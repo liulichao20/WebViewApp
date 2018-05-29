@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		08DE002D0A4FBA4652A4F259 /* Pods_WebViewApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8EE4162FE3273DDD683F4B /* Pods_WebViewApp.framework */; };
+		9455A01720BD59EF00AFC821 /* PATELHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455A01620BD59EF00AFC821 /* PATELHandle.swift */; };
+		9455A01920BD5A1200AFC821 /* PASMSHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455A01820BD5A1200AFC821 /* PASMSHandle.swift */; };
 		94A3D5E920BBA57F002DF63D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3D5E820BBA57F002DF63D /* AppDelegate.swift */; };
 		94A3D5F020BBA57F002DF63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A3D5EF20BBA57F002DF63D /* Assets.xcassets */; };
 		94A3D5FD20BBD04E002DF63D /* PAWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3D5FC20BBD04E002DF63D /* PAWebView.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		31B3FFD8ACEDA4F9E51381A0 /* Pods-WebViewApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebViewApp/Pods-WebViewApp.release.xcconfig"; sourceTree = "<group>"; };
+		9455A01620BD59EF00AFC821 /* PATELHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PATELHandle.swift; sourceTree = "<group>"; };
+		9455A01820BD5A1200AFC821 /* PASMSHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PASMSHandle.swift; sourceTree = "<group>"; };
 		94A3D5E520BBA57F002DF63D /* WebViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A3D5E820BBA57F002DF63D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94A3D5EF20BBA57F002DF63D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				94B37E1A20BCFEDB0058BE19 /* PAWebViewController+JSBridge.swift */,
 				94B37E1620BCFA030058BE19 /* UIScreen+Extension.swift */,
 				94B37E1E20BD49B50058BE19 /* PAScanHelper.swift */,
+				9455A01620BD59EF00AFC821 /* PATELHandle.swift */,
+				9455A01820BD5A1200AFC821 /* PASMSHandle.swift */,
 			);
 			path = webView;
 			sourceTree = "<group>";
@@ -226,8 +232,10 @@
 				94B37E1B20BCFEDB0058BE19 /* PAWebViewController+JSBridge.swift in Sources */,
 				94A3D5FD20BBD04E002DF63D /* PAWebView.swift in Sources */,
 				94A3D5FF20BBD071002DF63D /* PAWebViewController.swift in Sources */,
+				9455A01720BD59EF00AFC821 /* PATELHandle.swift in Sources */,
 				94B37E1F20BD49B50058BE19 /* PAScanHelper.swift in Sources */,
 				94A3D5E920BBA57F002DF63D /* AppDelegate.swift in Sources */,
+				9455A01920BD5A1200AFC821 /* PASMSHandle.swift in Sources */,
 				94B37E1920BCFE100058BE19 /* NJKWebViewProgressView+Extension.swift in Sources */,
 				94A3D60120BBE46F002DF63D /* PACookieSyncManager.swift in Sources */,
 				94B37E1720BCFA030058BE19 /* UIScreen+Extension.swift in Sources */,

@@ -134,18 +134,18 @@ extension PAWebView:WKNavigationDelegate {
                 return
             }
             if url.scheme == "tel" || url.scheme == "sms"{
-                //                if let range = url.absoluteString.range(of: ":"){
-                //                    let target = url.absoluteString.substring(from: range.upperBound)
-                //                    if url.scheme == "tel"{
-                //                        //                        PATELHandle.sharedTELHandle.tel(phoneNumber: target)
-                //                    }else if url.scheme == "sms"{
-                //                        if let controller = AppDelegate.sharedDelegate.window?.rootViewController{
-                //                            //                            PASMSHandle.sharedSMSHandle.sms(phoneNumber: target, controller: controller)
-                //                        }
-                //                    }
-                //                }
-                //                decisionHandler(.cancel)
-                //                return
+                if let range = url.absoluteString.range(of: ":"){
+                    let target = url.absoluteString.substring(from: range.upperBound)
+                    if url.scheme == "tel"{
+                        PATELHandle.sharedTELHandle.tel(phoneNumber: target)
+                    }else if url.scheme == "sms"{
+                        if let controller = AppDelegate.sharedDelegate.window?.rootViewController{
+                            PASMSHandle.sharedSMSHandle.sms(phoneNumber: target, controller: controller)
+                        }
+                    }
+                }
+                decisionHandler(.cancel)
+                return
             }
         }
         
