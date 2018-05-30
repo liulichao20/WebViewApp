@@ -15,10 +15,10 @@
 PAWebViewController介绍：
 
 ```swift
- required init(urlString url:String?,allowsBackForwardNavigationGestures:Bool = true) 
+ required init(urlString url:String?,allowsBackForwardNavigationGestures:Bool = true,nativeUrl:Url? = nil) 
 ```
 
- PAWebViewController初始化方法必传请求url，可选传allowsBackForwardNavigationGestures
+ PAWebViewController初始化方法必传请求url，可选传allowsBackForwardNavigationGestures 是否允许右滑页面返回 nativeUrl 本地资源地址
 
 配置navigation的title，可通过设置
 ```swift
@@ -48,6 +48,22 @@ override func didMove(toParentViewController parent: UIViewController?) {
     }
 ```
 中打破引用环。
+
+
+***
+获取项目中js代码
+```swift
+ let jsPath = Bundle.main.path(forResource: "swiftJS", ofType: "js")
+ let javascriptSource = try? String.init(contentsOfFile: jsPath!, encoding: String.Encoding.utf8)
+
+```
+
+ 加载本地html
+ ```swift 
+  let url = Bundle.main.url(forResource: "swiftJS", withExtension: "html")
+ webView.load(URLRequest.init(url: url!))
+```
+***
 
 
 另外：清除缓存调用PACookieSyncManager.sharedInstance.clearCookie()

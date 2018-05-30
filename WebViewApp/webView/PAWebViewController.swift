@@ -46,10 +46,13 @@ class PAWebViewController: UIViewController{
     fileprivate var documentTitle:String?
     fileprivate var saveImage:UIImage?
     
-    required init(urlString url:String?,allowsBackForwardNavigationGestures:Bool = true) {
+    required init(urlString url:String? = nil,allowsBackForwardNavigationGestures:Bool = true,nativeUrl:URL? = nil) {
         super.init(nibName: nil, bundle: nil)
         if let url = url,url.count>0{
             webUrl = URL(string: url)
+        }
+        if nativeUrl != nil {//let url = Bundle.main.url(forResource: "swiftJS", withExtension: "html")
+            webUrl = nativeUrl
         }
         let script = configScriptMessage()
         webView = PAWebView(scriptMessages: script?.scriptMessages, scriptSouces: script?.scriptSouces)
