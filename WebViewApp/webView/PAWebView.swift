@@ -23,11 +23,15 @@ class PAWebView:NSObject {
     var wkWebView:WKWebView!
     private let observerKeys:[String] = ["URL","title","canGoBack"]
     //与js交互的messagename列表
-    private var scriptMessage:[String]?
+    private var scriptMessages:[String]?
     //注入的js
-    private var scriptSource:[String]?
+    private var scriptSources:[String]?
     init(scriptMessages:[String]?=nil,scriptSouces:[String]?=nil) {
         super.init()
+        
+        self.scriptMessages = scriptMessages
+        self.scriptSources = scriptSouces
+        
         let config = WKWebViewConfiguration()
         config.processPool = PACookieSyncManager.sharedInstance.createProcessPool()
         config.allowsInlineMediaPlayback = true
@@ -38,7 +42,7 @@ class PAWebView:NSObject {
                 userContentController.add(self, name: $0)
             })
         }
-        if let sources = scriptSource,!sources.isEmpty {
+        if let sources = scriptSources,!sources.isEmpty {
             sources.forEach({
                 userContentController.addUserScript(WKUserScript(source: $0, injectionTime: .atDocumentStart, forMainFrameOnly: true))
             })
@@ -51,6 +55,15 @@ class PAWebView:NSObject {
         wkWebView.uiDelegate = self
         wkWebView.navigationDelegate = self
         addObserver()
+    }
+    
+    func removeScriptMessages() {
+        if let messages = scriptSources,!messages.isEmpty {
+            messages.forEach({
+                wkWebView.configuration.userContentController.removeScriptMessageHandler(forName: $0)
+
+            })
+        }
     }
     
     func addObserver() {

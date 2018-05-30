@@ -188,7 +188,7 @@ class PAWebViewController: UIViewController{
     override func didMove(toParentViewController parent: UIViewController?) {
         if parent == nil{
             progressView.removeFromSuperview()
-            webView.wkWebView.configuration.userContentController.removeAllUserScripts()
+            webView.removeScriptMessages()
         }
     }
     
