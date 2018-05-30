@@ -1,12 +1,12 @@
 # WebViewApp
-##功能
+## 功能
 * 调用显示h5页面
 * native与h5交互
 *  长按识别 保存图片
 * 调用打电话 发邮件功能
 
 ## 介绍：
-###调用方式：
+### 调用方式：
 ``` swift
  let controller = PAWebViewController(urlString: "https://www.baidu.com")
  controller.setWebView(title: "baidu.com", level: .document)
@@ -27,15 +27,28 @@ func setWebView(title:String?, level:PAWebViewTitleLevel)
 
 优先级：webHIgherTitle<-documentTitle<-title
 
-通过调用func configScriptMessage()->(scriptMessages:[String]?,scriptSouces:[String]?)? 配置注入的js  和 添加与js交互的方法名称
 js与native交互方式有2种：
 
 + 通过拦截请求url 获取url配带的信息，具体在 func executeJSBridge(requestString str:String)->Bool中添加逻辑
-+ 通过configScriptMessage()->(scriptMessages:[String]?,scriptSouces:[String]?)? 配置与js交互的方法名称，通过func dealUserContentController(messageName:String,body:Any) 处理native逻辑
++ 通过configScriptMessage()->(scriptMessages:[String]?,scriptSouces:[String]?)? 配置与js交互的方法名称和注入js代码，通过func dealUserContentController(messageName:String,body:Any) 处理native逻辑
 
 建议使用第二种方式去处理js与native的交互。
 
-长按图片弹出保存图片识别图片，可按实际情况使用SDWebImage去下载处理
+长按图片弹出保存图片识别图片，可按实际情况使用SDWebImage去下载处理 具体后续逻辑请自行添加
+
+**  提醒：**
+
+由于调用add(_ scriptMessageHandler: WKScriptMessageHandler, name: String)方法，addScriptMessageHandler将会对scriptMessageHandler参数传入的对象做强引用,而控制器又强引用了webView,然后webView又强引用了configuration,configuration又强引用了WKUserContentController对象,所以导致了引用循环,从而导致控制器不被释放的问题，所以我在 
+```swift
+override func didMove(toParentViewController parent: UIViewController?) {
+        if parent == nil{
+            progressView.removeFromSuperview()
+            webView.removeScriptMessages()
+        }
+    }
+```
+中打破引用环。
+
 
 另外：清除缓存调用PACookieSyncManager.sharedInstance.clearCookie()
 
