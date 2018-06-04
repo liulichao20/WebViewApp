@@ -7,128 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08DE002D0A4FBA4652A4F259 /* Pods_WebViewApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8EE4162FE3273DDD683F4B /* Pods_WebViewApp.framework */; };
-		9455A01720BD59EF00AFC821 /* PATELHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455A01620BD59EF00AFC821 /* PATELHandle.swift */; };
-		9455A01920BD5A1200AFC821 /* PASMSHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455A01820BD5A1200AFC821 /* PASMSHandle.swift */; };
-		94A3D5E920BBA57F002DF63D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3D5E820BBA57F002DF63D /* AppDelegate.swift */; };
-		94A3D5F020BBA57F002DF63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A3D5EF20BBA57F002DF63D /* Assets.xcassets */; };
-		94A3D5FD20BBD04E002DF63D /* PAWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3D5FC20BBD04E002DF63D /* PAWebView.swift */; };
-		94A3D5FF20BBD071002DF63D /* PAWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3D5FE20BBD071002DF63D /* PAWebViewController.swift */; };
-		94A3D60120BBE46F002DF63D /* PACookieSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3D60020BBE46F002DF63D /* PACookieSyncManager.swift */; };
-		94B37E1720BCFA030058BE19 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B37E1620BCFA030058BE19 /* UIScreen+Extension.swift */; };
-		94B37E1920BCFE100058BE19 /* NJKWebViewProgressView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B37E1820BCFE100058BE19 /* NJKWebViewProgressView+Extension.swift */; };
-		94B37E1B20BCFEDB0058BE19 /* PAWebViewController+JSBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B37E1A20BCFEDB0058BE19 /* PAWebViewController+JSBridge.swift */; };
-		94B37E1D20BD2A230058BE19 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B37E1C20BD2A230058BE19 /* Launch Screen.storyboard */; };
-		94B37E1F20BD49B50058BE19 /* PAScanHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B37E1E20BD49B50058BE19 /* PAScanHelper.swift */; };
+		9433551520C5246E00C04399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9433551420C5246E00C04399 /* Assets.xcassets */; };
+		9433552120C524B000C04399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433551F20C524AF00C04399 /* AppDelegate.swift */; };
+		9433552220C524B000C04399 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9433552020C524AF00C04399 /* Launch Screen.storyboard */; };
+		9433552D20C524B800C04399 /* PAWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433552420C524B800C04399 /* PAWebView.swift */; };
+		9433552E20C524B800C04399 /* PASMSHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433552520C524B800C04399 /* PASMSHandle.swift */; };
+		9433552F20C524B800C04399 /* PAWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433552620C524B800C04399 /* PAWebViewController.swift */; };
+		9433553020C524B800C04399 /* PAWebViewController+JSBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433552720C524B800C04399 /* PAWebViewController+JSBridge.swift */; };
+		9433553120C524B800C04399 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433552820C524B800C04399 /* UIScreen+Extension.swift */; };
+		9433553220C524B800C04399 /* PATELHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433552920C524B800C04399 /* PATELHandle.swift */; };
+		9433553320C524B800C04399 /* PACookieSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433552A20C524B800C04399 /* PACookieSyncManager.swift */; };
+		9433553420C524B800C04399 /* PAKWebViewProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433552B20C524B800C04399 /* PAKWebViewProgressView.swift */; };
+		9433553520C524B800C04399 /* PAScanHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433552C20C524B800C04399 /* PAScanHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		31B3FFD8ACEDA4F9E51381A0 /* Pods-WebViewApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebViewApp/Pods-WebViewApp.release.xcconfig"; sourceTree = "<group>"; };
-		9455A01620BD59EF00AFC821 /* PATELHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PATELHandle.swift; sourceTree = "<group>"; };
-		9455A01820BD5A1200AFC821 /* PASMSHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PASMSHandle.swift; sourceTree = "<group>"; };
-		94A3D5E520BBA57F002DF63D /* WebViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		94A3D5E820BBA57F002DF63D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94A3D5EF20BBA57F002DF63D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		94A3D5F420BBA57F002DF63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94A3D5FC20BBD04E002DF63D /* PAWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAWebView.swift; sourceTree = "<group>"; };
-		94A3D5FE20BBD071002DF63D /* PAWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAWebViewController.swift; sourceTree = "<group>"; };
-		94A3D60020BBE46F002DF63D /* PACookieSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PACookieSyncManager.swift; sourceTree = "<group>"; };
-		94B37E1620BCFA030058BE19 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
-		94B37E1820BCFE100058BE19 /* NJKWebViewProgressView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NJKWebViewProgressView+Extension.swift"; sourceTree = "<group>"; };
-		94B37E1A20BCFEDB0058BE19 /* PAWebViewController+JSBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PAWebViewController+JSBridge.swift"; sourceTree = "<group>"; };
-		94B37E1C20BD2A230058BE19 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		94B37E1E20BD49B50058BE19 /* PAScanHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAScanHelper.swift; sourceTree = "<group>"; };
-		96B5A2FB459143CA52C0C40E /* Pods-WebViewApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebViewApp/Pods-WebViewApp.debug.xcconfig"; sourceTree = "<group>"; };
-		AC8EE4162FE3273DDD683F4B /* Pods_WebViewApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebViewApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9433550A20C5246E00C04399 /* WebViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9433551420C5246E00C04399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9433551920C5246E00C04399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9433551F20C524AF00C04399 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9433552020C524AF00C04399 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9433552420C524B800C04399 /* PAWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAWebView.swift; sourceTree = "<group>"; };
+		9433552520C524B800C04399 /* PASMSHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PASMSHandle.swift; sourceTree = "<group>"; };
+		9433552620C524B800C04399 /* PAWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAWebViewController.swift; sourceTree = "<group>"; };
+		9433552720C524B800C04399 /* PAWebViewController+JSBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PAWebViewController+JSBridge.swift"; sourceTree = "<group>"; };
+		9433552820C524B800C04399 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		9433552920C524B800C04399 /* PATELHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PATELHandle.swift; sourceTree = "<group>"; };
+		9433552A20C524B800C04399 /* PACookieSyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PACookieSyncManager.swift; sourceTree = "<group>"; };
+		9433552B20C524B800C04399 /* PAKWebViewProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAKWebViewProgressView.swift; sourceTree = "<group>"; };
+		9433552C20C524B800C04399 /* PAScanHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAScanHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		94A3D5E220BBA57F002DF63D /* Frameworks */ = {
+		9433550720C5246E00C04399 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08DE002D0A4FBA4652A4F259 /* Pods_WebViewApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		61F530267ABFF3FFA271CD9B /* Pods */ = {
+		9433550120C5246E00C04399 = {
 			isa = PBXGroup;
 			children = (
-				96B5A2FB459143CA52C0C40E /* Pods-WebViewApp.debug.xcconfig */,
-				31B3FFD8ACEDA4F9E51381A0 /* Pods-WebViewApp.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		94A3D5DC20BBA57F002DF63D = {
-			isa = PBXGroup;
-			children = (
-				94A3D5E720BBA57F002DF63D /* WebViewApp */,
-				94A3D5E620BBA57F002DF63D /* Products */,
-				61F530267ABFF3FFA271CD9B /* Pods */,
-				B0A85D9FD2B1E6496006FC87 /* Frameworks */,
+				9433550C20C5246E00C04399 /* WebViewApp */,
+				9433550B20C5246E00C04399 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		94A3D5E620BBA57F002DF63D /* Products */ = {
+		9433550B20C5246E00C04399 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94A3D5E520BBA57F002DF63D /* WebViewApp.app */,
+				9433550A20C5246E00C04399 /* WebViewApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		94A3D5E720BBA57F002DF63D /* WebViewApp */ = {
+		9433550C20C5246E00C04399 /* WebViewApp */ = {
 			isa = PBXGroup;
 			children = (
-				94A3D5E820BBA57F002DF63D /* AppDelegate.swift */,
-				94A3D5FB20BBD028002DF63D /* webView */,
-				94A3D5EF20BBA57F002DF63D /* Assets.xcassets */,
-				94B37E1C20BD2A230058BE19 /* Launch Screen.storyboard */,
-				94A3D5F420BBA57F002DF63D /* Info.plist */,
+				9433551F20C524AF00C04399 /* AppDelegate.swift */,
+				9433552020C524AF00C04399 /* Launch Screen.storyboard */,
+				9433552320C524B800C04399 /* webView */,
+				9433551420C5246E00C04399 /* Assets.xcassets */,
+				9433551920C5246E00C04399 /* Info.plist */,
 			);
 			path = WebViewApp;
 			sourceTree = "<group>";
 		};
-		94A3D5FB20BBD028002DF63D /* webView */ = {
+		9433552320C524B800C04399 /* webView */ = {
 			isa = PBXGroup;
 			children = (
-				94A3D5FC20BBD04E002DF63D /* PAWebView.swift */,
-				94A3D5FE20BBD071002DF63D /* PAWebViewController.swift */,
-				94A3D60020BBE46F002DF63D /* PACookieSyncManager.swift */,
-				94B37E1820BCFE100058BE19 /* NJKWebViewProgressView+Extension.swift */,
-				94B37E1A20BCFEDB0058BE19 /* PAWebViewController+JSBridge.swift */,
-				94B37E1620BCFA030058BE19 /* UIScreen+Extension.swift */,
-				94B37E1E20BD49B50058BE19 /* PAScanHelper.swift */,
-				9455A01620BD59EF00AFC821 /* PATELHandle.swift */,
-				9455A01820BD5A1200AFC821 /* PASMSHandle.swift */,
+				9433552420C524B800C04399 /* PAWebView.swift */,
+				9433552520C524B800C04399 /* PASMSHandle.swift */,
+				9433552620C524B800C04399 /* PAWebViewController.swift */,
+				9433552720C524B800C04399 /* PAWebViewController+JSBridge.swift */,
+				9433552820C524B800C04399 /* UIScreen+Extension.swift */,
+				9433552920C524B800C04399 /* PATELHandle.swift */,
+				9433552A20C524B800C04399 /* PACookieSyncManager.swift */,
+				9433552B20C524B800C04399 /* PAKWebViewProgressView.swift */,
+				9433552C20C524B800C04399 /* PAScanHelper.swift */,
 			);
 			path = webView;
-			sourceTree = "<group>";
-		};
-		B0A85D9FD2B1E6496006FC87 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AC8EE4162FE3273DDD683F4B /* Pods_WebViewApp.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94A3D5E420BBA57F002DF63D /* WebViewApp */ = {
+		9433550920C5246E00C04399 /* WebViewApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94A3D5F720BBA57F002DF63D /* Build configuration list for PBXNativeTarget "WebViewApp" */;
+			buildConfigurationList = 9433551C20C5246E00C04399 /* Build configuration list for PBXNativeTarget "WebViewApp" */;
 			buildPhases = (
-				B7220253DD0F975449E473CA /* [CP] Check Pods Manifest.lock */,
-				94A3D5E120BBA57F002DF63D /* Sources */,
-				94A3D5E220BBA57F002DF63D /* Frameworks */,
-				94A3D5E320BBA57F002DF63D /* Resources */,
-				04B8F1E303308FCD2F325118 /* [CP] Embed Pods Frameworks */,
+				9433550620C5246E00C04399 /* Sources */,
+				9433550720C5246E00C04399 /* Frameworks */,
+				9433550820C5246E00C04399 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -136,26 +110,27 @@
 			);
 			name = WebViewApp;
 			productName = WebViewApp;
-			productReference = 94A3D5E520BBA57F002DF63D /* WebViewApp.app */;
+			productReference = 9433550A20C5246E00C04399 /* WebViewApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		94A3D5DD20BBA57F002DF63D /* Project object */ = {
+		9433550220C5246E00C04399 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = com.pa.com;
 				TargetAttributes = {
-					94A3D5E420BBA57F002DF63D = {
+					9433550920C5246E00C04399 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 94A3D5E020BBA57F002DF63D /* Build configuration list for PBXProject "WebViewApp" */;
+			buildConfigurationList = 9433550520C5246E00C04399 /* Build configuration list for PBXProject "WebViewApp" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -163,89 +138,50 @@
 				en,
 				Base,
 			);
-			mainGroup = 94A3D5DC20BBA57F002DF63D;
-			productRefGroup = 94A3D5E620BBA57F002DF63D /* Products */;
+			mainGroup = 9433550120C5246E00C04399;
+			productRefGroup = 9433550B20C5246E00C04399 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94A3D5E420BBA57F002DF63D /* WebViewApp */,
+				9433550920C5246E00C04399 /* WebViewApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		94A3D5E320BBA57F002DF63D /* Resources */ = {
+		9433550820C5246E00C04399 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94B37E1D20BD2A230058BE19 /* Launch Screen.storyboard in Resources */,
-				94A3D5F020BBA57F002DF63D /* Assets.xcassets in Resources */,
+				9433552220C524B000C04399 /* Launch Screen.storyboard in Resources */,
+				9433551520C5246E00C04399 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		04B8F1E303308FCD2F325118 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WebViewApp/Pods-WebViewApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/NJKWebViewProgress/NJKWebViewProgress.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NJKWebViewProgress.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebViewApp/Pods-WebViewApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B7220253DD0F975449E473CA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WebViewApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		94A3D5E120BBA57F002DF63D /* Sources */ = {
+		9433550620C5246E00C04399 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94B37E1B20BCFEDB0058BE19 /* PAWebViewController+JSBridge.swift in Sources */,
-				94A3D5FD20BBD04E002DF63D /* PAWebView.swift in Sources */,
-				94A3D5FF20BBD071002DF63D /* PAWebViewController.swift in Sources */,
-				9455A01720BD59EF00AFC821 /* PATELHandle.swift in Sources */,
-				94B37E1F20BD49B50058BE19 /* PAScanHelper.swift in Sources */,
-				94A3D5E920BBA57F002DF63D /* AppDelegate.swift in Sources */,
-				9455A01920BD5A1200AFC821 /* PASMSHandle.swift in Sources */,
-				94B37E1920BCFE100058BE19 /* NJKWebViewProgressView+Extension.swift in Sources */,
-				94A3D60120BBE46F002DF63D /* PACookieSyncManager.swift in Sources */,
-				94B37E1720BCFA030058BE19 /* UIScreen+Extension.swift in Sources */,
+				9433553420C524B800C04399 /* PAKWebViewProgressView.swift in Sources */,
+				9433553020C524B800C04399 /* PAWebViewController+JSBridge.swift in Sources */,
+				9433552E20C524B800C04399 /* PASMSHandle.swift in Sources */,
+				9433552D20C524B800C04399 /* PAWebView.swift in Sources */,
+				9433552F20C524B800C04399 /* PAWebViewController.swift in Sources */,
+				9433552120C524B000C04399 /* AppDelegate.swift in Sources */,
+				9433553220C524B800C04399 /* PATELHandle.swift in Sources */,
+				9433553120C524B800C04399 /* UIScreen+Extension.swift in Sources */,
+				9433553320C524B800C04399 /* PACookieSyncManager.swift in Sources */,
+				9433553520C524B800C04399 /* PAScanHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		94A3D5F520BBA57F002DF63D /* Debug */ = {
+		9433551A20C5246E00C04399 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		94A3D5F620BBA57F002DF63D /* Release */ = {
+		9433551B20C5246E00C04399 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -352,64 +288,61 @@
 			};
 			name = Release;
 		};
-		94A3D5F820BBA57F002DF63D /* Debug */ = {
+		9433551D20C5246E00C04399 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96B5A2FB459143CA52C0C40E /* Pods-WebViewApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WebViewApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pa.WebViewApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pa.com.WebViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		94A3D5F920BBA57F002DF63D /* Release */ = {
+		9433551E20C5246E00C04399 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31B3FFD8ACEDA4F9E51381A0 /* Pods-WebViewApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WebViewApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pa.WebViewApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pa.com.WebViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94A3D5E020BBA57F002DF63D /* Build configuration list for PBXProject "WebViewApp" */ = {
+		9433550520C5246E00C04399 /* Build configuration list for PBXProject "WebViewApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94A3D5F520BBA57F002DF63D /* Debug */,
-				94A3D5F620BBA57F002DF63D /* Release */,
+				9433551A20C5246E00C04399 /* Debug */,
+				9433551B20C5246E00C04399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94A3D5F720BBA57F002DF63D /* Build configuration list for PBXNativeTarget "WebViewApp" */ = {
+		9433551C20C5246E00C04399 /* Build configuration list for PBXNativeTarget "WebViewApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94A3D5F820BBA57F002DF63D /* Debug */,
-				94A3D5F920BBA57F002DF63D /* Release */,
+				9433551D20C5246E00C04399 /* Debug */,
+				9433551E20C5246E00C04399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 94A3D5DD20BBA57F002DF63D /* Project object */;
+	rootObject = 9433550220C5246E00C04399 /* Project object */;
 }

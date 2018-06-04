@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import NJKWebViewProgress
 
 enum PAWebViewTitleLevel:Int {
     case document
@@ -28,8 +27,8 @@ class PAWebViewController: UIViewController{
         }
     }
     
-    lazy var progressView:NJKWebViewProgressView = {
-        let progressView:NJKWebViewProgressView = NJKWebViewProgressView(frame: CGRect(x: 0, y: self.paNavigationBarHidden ? UIScreen.statusHeight - 2 : 43, width: self.view.bounds.size.width, height: 2))
+    lazy var progressView:PAKWebViewProgressView = {
+        let progressView:PAKWebViewProgressView = PAKWebViewProgressView(frame: CGRect(x: 0, y: self.paNavigationBarHidden ? UIScreen.statusHeight - 2 : 43, width: self.view.bounds.size.width, height: 2))
         progressView.isHidden = true //先隐藏，避免闪烁
         progressView.autoresizingMask = [.flexibleTopMargin,.flexibleWidth]
         progressView.progressBarView.backgroundColor = UIColor.orange
